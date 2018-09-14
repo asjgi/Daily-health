@@ -33,7 +33,7 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".SecondLogoActivity"
+            android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
