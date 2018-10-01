@@ -42,7 +42,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_google);
 
         //Views
         mStatusTextView = findViewById(R.id.status);
@@ -139,9 +139,12 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     private void showProgressDialog() {
         if (mProgressDialog == null) {
-            mProgressDialog = ProgressDialog.show(LoginActivity.this, "",
-                    getResources().getString(R.string.login_progress_message), true, false, null);
+            mProgressDialog = new ProgressDialog(this);
+            mProgressDialog.setMessage(getString(R.string.loading));
+            mProgressDialog.setIndeterminate(true);
         }
+
+        mProgressDialog.show();
     }
 
     private void signIn() {
