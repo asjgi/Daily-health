@@ -42,7 +42,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_google);
+        setContentView(R.layout.activity_login);
 
         //Views
         mStatusTextView = findViewById(R.id.status);
@@ -149,7 +149,9 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+//        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
     }
     // [END signin]
 
