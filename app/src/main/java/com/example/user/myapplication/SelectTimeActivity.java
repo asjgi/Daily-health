@@ -7,17 +7,16 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
-public class SelectWeatherActivity extends Activity{
-
+public class SelectTimeActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_weather);
-        Button p_button = (Button)findViewById(R.id.select_weather_button);
+        setContentView(R.layout.activity_select_time);
+        Button p_button = (Button)findViewById(R.id.select_time_button);
         p_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SelectWeatherActivity.this, SelectTimeActivity.class);
+                Intent intent = new Intent(SelectTimeActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

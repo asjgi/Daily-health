@@ -36,6 +36,19 @@
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+        <activity
+            android:name=".SelectPlaceActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".SelectWeatherActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+        <activity
+            android:name=".SelectTimeActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>

@@ -150,7 +150,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
 //        startActivityForResult(signInIntent, RC_SIGN_IN);
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        Intent intent = new Intent(LoginActivity.this, SelectPlaceActivity.class);
         startActivity(intent);
     }
     // [END signin]
