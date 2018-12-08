@@ -16,7 +16,7 @@ public class SelectTimeActivity extends Activity {
         p_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SelectTimeActivity.this, MainActivity.class);
+                Intent intent = new Intent(SelectTimeActivity.this, SelectCompleteActivity.class);
                 startActivity(intent);
             }
         });

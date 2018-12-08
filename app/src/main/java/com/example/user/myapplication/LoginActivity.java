@@ -48,6 +48,8 @@ public class LoginActivity extends Activity implements View.OnClickListener {
         mStatusTextView = findViewById(R.id.status);
         mDetailTextView = findViewById(R.id.detail);
 
+        //Button
+        findViewById(R.id.NextStepButton).setOnClickListener(this);
         findViewById(R.id.signInButton).setOnClickListener(this);
         findViewById(R.id.signOutButton).setOnClickListener(this);
         findViewById(R.id.disconnectButton).setOnClickListener(this);
@@ -122,11 +124,13 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             mStatusTextView.setText(getString(R.string.google_status_fmt, user.getEmail()));
             mDetailTextView.setText(getString(R.string.firebase_status_fmt, user.getUid()));
             findViewById(R.id.signInButton).setVisibility(View.GONE);
+            findViewById(R.id.NextStepButton).setVisibility(View.VISIBLE);
             findViewById(R.id.signOutAndDisconnect).setVisibility(View.VISIBLE);
         } else {
             mStatusTextView.setText(R.string.sign_out);
             mDetailTextView.setText(null);
             findViewById(R.id.signInButton).setVisibility(View.VISIBLE);
+            findViewById(R.id.NextStepButton).setVisibility(View.GONE);
             findViewById(R.id.signOutAndDisconnect).setVisibility(View.GONE);
         }
     }
@@ -149,9 +153,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
 
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-//        startActivityForResult(signInIntent, RC_SIGN_IN);
-        Intent intent = new Intent(LoginActivity.this, SelectPlaceActivity.class);
-        startActivity(intent);
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+//        Toast toast = Toast.makeText(this,"Access Login", Toast.LENGTH_SHORT);
+//        toast.show();
+
     }
     // [END signin]
 
@@ -192,6 +197,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             signOut();
         } else if (i == R.id.disconnectButton) {
             revokeAccess();
+        }
+        else if (i == R.id.NextStepButton) {
+            Intent intent = new Intent(LoginActivity.this, SelectBodyPartActivity.class);
+            startActivity(intent);
         }
     }
 }

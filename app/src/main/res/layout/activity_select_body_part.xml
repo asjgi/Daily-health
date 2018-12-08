@@ -3,16 +3,16 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/select_place"
+    android:background="@drawable/select_body_part"
     android:orientation="vertical"
     android:weightSum="10">
 
     <Button
         android:id="@+id/place_save_button"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/fui_button_text_save"
-        android:theme="@style/ThemeOverlay.MyDarkButton" />
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/button_of_next" />
 
 </LinearLayout>

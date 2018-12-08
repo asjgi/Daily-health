@@ -38,11 +38,11 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 
         <activity
-            android:name=".SelectPlaceActivity"
+            android:name=".SelectBodyPartActivity"
             android:label="@string/title_activity_login"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
-            android:name=".SelectWeatherActivity"
+            android:name=".SelectCompleteActivity"
             android:label="@string/title_activity_login"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
         <activity
