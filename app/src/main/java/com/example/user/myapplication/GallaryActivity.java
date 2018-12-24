@@ -86,7 +86,8 @@ public class GallaryActivity extends AppCompatActivity
             Intent intent = new Intent(GallaryActivity.this, CameraActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent intent = new Intent(GallaryActivity.this, VoiceAgentActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

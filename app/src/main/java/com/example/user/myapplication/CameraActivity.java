@@ -84,7 +84,8 @@ public class CameraActivity extends AppCompatActivity
             Intent intent = new Intent(CameraActivity.this, GallaryActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent intent = new Intent(CameraActivity.this, VoiceAgentActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
