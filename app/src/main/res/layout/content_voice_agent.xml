@@ -12,7 +12,16 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/screenshot_fitbit" />
+        android:id="@+id/android_basic_background"
+        android:src="@drawable/ic_launcher_background" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voice_agent_button"
+        android:src="@drawable/fitbit_coach"
+        android:scaleType="fitXY"/>
+
 
 
 </android.support.constraint.ConstraintLayout>
