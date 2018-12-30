@@ -20,7 +20,7 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_camera" />
+    <include layout="@layout/content_voice_agent" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

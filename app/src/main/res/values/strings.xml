@@ -2,11 +2,11 @@
     <string name="app_name">My Application</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">Daily Health Project</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="title_activity_logo">LogoActivity</string>
-    <string name="title_activity_acmera">CameraActivity</string>
+    <string name="title_activity_voice_agent">VoiceAgentTab</string>
     <string name="title_activity_gallery">GalleryActivity</string>
     <string name="title_activity_login">SecondLogoActivity</string>
     <string name="title_activity_voice">VoiceAgentActivity</string>
