@@ -1,10 +1,8 @@
 package com.example.user.myapplication;
 
-
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -17,21 +15,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class VoiceAgentActivity extends AppCompatActivity
+public class CameraActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_voice_agent);
+        setContentView(R.layout.activity_camera);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -43,7 +41,7 @@ public class VoiceAgentActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -77,25 +75,27 @@ public class VoiceAgentActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-        @Override
-        public boolean onNavigationItemSelected (@NonNull MenuItem menuItem){
 
-            int id = menuItem.getItemId();
-            if (id == R.id.nav_camera) {
-                // Handle the camera action
-                Intent intent = new Intent(VoiceAgentActivity.this, CameraActivity.class);
-                startActivity(intent);
-            } else if (id == R.id.nav_slideshow) {
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
-            } else if (id == R.id.nav_manage) {
+        int id = menuItem.getItemId();
+        if (id == R.id.nav_gallery) {
+            Intent intent = new Intent(CameraActivity.this, GallaryActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(CameraActivity.this, VoiceAgentActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_manage) {
 
-            } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_share) {
 
-            } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_send) {
 
-            }
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-            drawer.closeDrawer(GravityCompat.START);
-            return true;
         }
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
+}
+

@@ -23,8 +23,8 @@
             android:label="@string/nav_header_title"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".VoiceAgentActivity"
-            android:label="@string/title_activity_voice_agent"
+            android:name=".CameraActivity"
+            android:label="@string/title_activity_acmera"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity

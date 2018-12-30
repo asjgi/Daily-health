@@ -21,7 +21,7 @@ public class LogoActivity extends Activity {
     class splash_handler implements Runnable {
         @Override
         public void run() {
-            Intent intent = new Intent(LogoActivity.this,  MainActivity.class);
+            Intent intent = new Intent(LogoActivity.this,  LoginActivity.class);
             startActivity(intent);
             finish();
         }

@@ -83,7 +83,7 @@ public class GallaryActivity extends AppCompatActivity
         int id = menuItem.getItemId();
         if (id == R.id.nav_camera) {
             // Handle the camera action
-            Intent intent = new Intent(GallaryActivity.this, VoiceAgentActivity.class);
+            Intent intent = new Intent(GallaryActivity.this, CameraActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
             Intent intent = new Intent(GallaryActivity.this, VoiceAgentActivity.class);
