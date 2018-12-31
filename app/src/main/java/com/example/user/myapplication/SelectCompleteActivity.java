@@ -13,12 +13,20 @@ public class SelectCompleteActivity extends Activity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_compelete);
-        Button p_button = (Button)findViewById(R.id.select_weather_button);
+        Button p_button = (Button) findViewById(R.id.select_weather_button);
+        Button b_button = (Button) findViewById(R.id.page_back_button_complete);
+
         p_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(SelectCompleteActivity.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+        b_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SelectCompleteActivity.super.onBackPressed();
             }
         });
     }

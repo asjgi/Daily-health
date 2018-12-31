@@ -7,13 +7,21 @@
     android:orientation="vertical"
     android:weightSum="10">
 
+
     <Button
-        android:id="@+id/select_weather_button"
-        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/page_back_button_complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Continue"
-        android:theme="@style/ThemeOverlay.MyDarkButton" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/arrow_button_06"/>
 
+    <Button
+        android:id="@+id/select_weather_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="520dp"
+        android:background="@drawable/continue_button_11" />
 
 </LinearLayout>

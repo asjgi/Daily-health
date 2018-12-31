@@ -15,7 +15,7 @@ public class LogoActivity extends Activity {
         setContentView(R.layout.activity_logo);
 
         Handler x = new Handler();
-        x.postDelayed(new splash_handler(), 5000);
+        x.postDelayed(new splash_handler(), 1500);
     }
 
     class splash_handler implements Runnable {

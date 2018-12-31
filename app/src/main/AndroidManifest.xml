@@ -28,8 +28,12 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
-            android:name=".GallaryActivity"
-            android:label="@string/title_activity_gallery"
+        android:name=".GallaryActivity"
+        android:label="@string/title_activity_gallery"
+        android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".VoiceAgentActivity"
+            android:label="@string/title_activity_voice"
             android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <activity
@@ -48,10 +52,6 @@
         <activity
             android:name=".SelectTimeActivity"
             android:label="@string/title_activity_login"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
-        <activity
-            android:name=".VoiceAgentActivity"
-            android:label="@string/title_activity_voice"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
     </application>
 
