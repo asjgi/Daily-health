@@ -6,7 +6,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="title_activity_logo">LogoActivity</string>
-    <string name="title_activity_acmera">VoiceAgentActivity</string>
+    <string name="title_activity_acmera">PushUpType</string>
     <string name="title_activity_gallery">GalleryActivity</string>
     <string name="title_activity_login">SecondLogoActivity</string>
     <string name="title_activity_voice">VoiceAgentActivity</string>
